@@ -1,10 +1,14 @@
 :root{
+	--body-background-color: #ececec;
 	--basic-font-color-dark: #222222;
+	--social-icons-color: #36454F;
+	--social-icons-color-hover: #222222;
 }
 
 body {
 	font-family: "Open Sans", sans-serif;
 	color: var(--basic-font-color-dark);
+	background-color: var(--body-background-color);
 }
 
 img{
@@ -47,4 +51,20 @@ h6 {
 .content .name{
 	font-size: 4rem;
 	font-weight: bolder;
+}
+
+.content .social-icons{
+	margin-top: 27px;
+}
+
+.content .social-icons a{
+	color: var(--social-icons-color);
+	font-size: 40px;
+	margin-left: 6px;
+	margin-right: 6px;
+	transition: ease 0.3s;
+}
+
+.content .social-icons a:hover{
+	color: var(--social-icons-color-hover);
 }
