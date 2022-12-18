@@ -3,6 +3,7 @@
 	--basic-font-color-dark: #222222;
 	--social-icons-color: #36454F;
 	--social-icons-color-hover: #222222;
+	--info-color: #8cbfda;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
 }
 
 img{
-	height: 100%;
 	width: 100%;
 }
 
@@ -25,10 +25,23 @@ h6 {
 	font-family: "Roboto", sans-serif;
 }
 
+/* ************************************* 
+	Navbar
+ *************************************** */
+
 .custom-navbar{
 	box-shadow: 5px 1px 43px lightgrey;
 	padding: 12px;
 }
+
+.custom-navbar .navbar-brand img{
+	border-radius: 50%;
+}
+
+
+/* ************************************* 
+	Hero Sections
+ *************************************** */
 
 .profile-images{
 	gap: -10px;
@@ -67,4 +80,67 @@ h6 {
 
 .content .social-icons a:hover{
 	color: var(--social-icons-color-hover);
+}
+
+/* ************************************* 
+	Work Experience
+ *************************************** */
+#work-experience{
+	margin-top: 120px;
+	margin-bottom: 30px;
+	max-width: 810px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.work-experience-nav button{
+	border: none;
+	color: var(--basic-font-color-dark);
+	border-left: 2px solid #bdbdbd;
+	transition: ease-in 0.3s all;
+	background-color: var(--body-background-color);
+}
+
+.work-experience-nav button.active{
+	color: black;
+	border-left: 2px solid black;
+	background-color: #adadadad;
+}
+
+.work-experience-nav button:hover:not(.active){
+	background-color: #dddddd;
+	color: #333333;
+}
+
+.work-experience-content .work-time,.work-experience-content .work-location{
+	color: var(--info-color);
+	font-size: 15px;
+	margin-top: -7px;
+	font-weight: 400;
+	display: block;
+}
+
+.work-experience-content .company-info{
+	font-size: 14px;
+}
+
+.work-experience-content .company-info .work-points-wrapper{
+	border-left: 1px dashed gray;
+	margin-left: 22px;
+}
+
+.work-experience-content .company-info .work-point {
+	margin-bottom: 12px;
+	margin-left: 18px;
+	position: relative;
+}
+
+.work-experience-content .company-info .work-point .marking{
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	left: -31px;
+	top: -2px;
+	background-color: var(--info-color);
 }
