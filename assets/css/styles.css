@@ -4,12 +4,23 @@
 	--social-icons-color: #36454F;
 	--social-icons-color-hover: #222222;
 	--info-color: #8cbfda;
+	--section-margin-top: 120px;
+	--max-section-width: 810px;
 }
 
 body {
 	font-family: "Open Sans", sans-serif;
 	color: var(--basic-font-color-dark);
 	background-color: var(--body-background-color);
+}
+
+/* Common styles for all the sections except the hero section */
+section:not(#hero-section) {
+	max-width: var(--max-section-width);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: var(--section-margin-top);
+	margin-bottom: 30px;
 }
 
 img{
@@ -85,13 +96,10 @@ h6 {
 /* ************************************* 
 	Work Experience
  *************************************** */
-#work-experience{
-	margin-top: 120px;
-	margin-bottom: 30px;
-	max-width: 810px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
+/* #work-experience{
+	
+} */
 
 .work-experience-nav button{
 	border: none;
@@ -144,3 +152,26 @@ h6 {
 	top: -2px;
 	background-color: var(--info-color);
 }
+
+
+/* ************************************* 
+	Skills
+ *************************************** */
+
+ #skills{
+	margin-top: var(--section-margin-top);
+ }
+
+ #skills .images-wrapper {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+ #skills .images-wrapper img{
+	width: 55px;
+ }
+
+ #skills .images-wrapper img.large-image{
+	width: 72px;
+ }
