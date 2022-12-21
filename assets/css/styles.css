@@ -12,6 +12,11 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: var(--basic-font-color-dark);
 	background-color: var(--body-background-color);
+	counter-reset: section;
+}
+
+.body-wrapper{
+	overflow-x: hidden;
 }
 
 /* Common styles for all the sections except the hero section */
@@ -21,6 +26,36 @@ section:not(#hero-section) {
 	margin-right: auto;
 	margin-top: var(--section-margin-top);
 	margin-bottom: 30px;
+}
+
+/* Global Section Header Configuration */
+
+section>.container>.row>.col>h3{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: clamp(26px,5vw,32px);
+	white-space: nowrap;
+}
+
+section>.container>.row>.col>h3::before{
+	position: relative;
+	counter-increment: section 1;
+	content: "0" counter(section) ".";
+	margin-right: 10px;
+	color: green;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+section>.container>.row>.col>h3::after{
+	content: "";
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 1px;
+	margin-left: 20px;
+	background-color: rgba(0, 0, 0, 0.22);
 }
 
 img{
@@ -92,6 +127,34 @@ h6 {
 .content .social-icons a:hover{
 	color: var(--social-icons-color-hover);
 }
+
+
+/* ************************************* 
+	About Me
+ *************************************** */
+ #about-me .images-wrapper{
+	position: relative;
+ }
+ #about-me .images-wrapper .about-pic-background{
+	height: 66%;
+	width: 100%;
+	background-color: rgba(0,0,240,0.18);
+	position: absolute;
+	border-radius: 90px 63px 90px 20px;
+	z-index: -1;
+ }
+#about-me .images-wrapper img{
+	border-radius: 130px 100px 130px 20px;
+	filter: grayscale(54%);
+	transition: 0.3s all;
+}
+
+#about-me .images-wrapper img:hover {
+	border-radius: 130px 100px 130px 20px;
+	filter: grayscale(0%);
+}
+
+
 
 /* ************************************* 
 	Work Experience
@@ -174,4 +237,33 @@ h6 {
 
  #skills .images-wrapper img.large-image{
 	width: 72px;
+ }
+
+
+ /* ************************************* 
+	Footer
+ *************************************** */
+ footer{
+	background-color: var(--basic-font-color-dark);
+	min-height: 50px;
+ }
+
+ footer p{
+	margin: 0px;
+ }
+
+ footer .social-icons{
+	margin-top: 18px;
+ }
+
+ footer .social-icons a{
+	color: rgba(255,255,255,0.4);
+	font-size: 27px;
+	margin-left: 6px;
+	margin-right: 6px;
+	transition: ease 0.3s;
+ }
+
+ footer .social-icons a:hover{
+	color: rgba(255, 255, 255, 0.9);
  }
