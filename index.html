@@ -1,3 +1,12 @@
+<!-- TODO:
+1. Projects Section
+3. Navbar working and underline on active
+4. Change Photos
+5. Change Content for about me and other headings
+6. Add Social Media Icons to the left.
+7. Animate on scroll.
+-->
+
 <html>
     <head>
         <title>Apurva Thakker | Profile</title>
@@ -260,7 +269,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </section>
             
             <!-- Skills -->
@@ -344,6 +352,85 @@
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-3 d-flex align-items-center justify-content-center">
                                     <img class="img-fuild" src="./assets/images/skills/tools/postman.webp" alt="Postman" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="">Projects I've worked on</h3>
+                        </div>
+                    </div>
+                    <div id="projects-content">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 image-col">
+                                <img src="https://brittanychiang.com/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif"
+                                    class="img-responsive" />
+                            </div>
+                            <div class="col-md-6 col-sm-12 project-content">
+                                <div class="project-info">
+                                    <h6 class="text-muted">Frontend Project</h6>
+                                    <h4 class="fw-bold">Covidtoday.in</h4>
+                                    <div class="project-details my-3">
+                                        The Covid Today Dashboard tracked <b>India's progress</b> through the coronavirus epidemic. The purpose was to analyse and present the data to have a more insightful grasp of the local situation and respond accordingly.
+                                    </div>
+                                    <div class="tags text-muted">
+                                        React Js, Bootstrap, Chart Js, GH Pages
+                                    </div>
+                                    <div class="project-icons mt-3 d-flex align-items-center gap-2 justify-content-md-end">
+                                        <a target="_blank" href="https://github.com/CovidToday/UI"><i class="fa fa-github fa-2x"></i></a>
+                                        <a target="_blank" href="http://www.covidtoday.in/"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 image-col">
+                                <img src="./assets/images/projects/ohfindia.com.png"
+                                    class="img-responsive" />
+                            </div>
+                            <div class="col-md-6 col-sm-12 project-content">
+                                <div class="project-info">
+                                    <h6 class="text-muted">Full Stack Project</h6>
+                                    <h4 class="fw-bold">OHFIndia.com</h4>
+                                    <div class="project-details my-3">
+                                        OHFIndia.com is an internal portal for Beans.ai wherein the team members,leads and managers can track the performances across processes. The project uses a N-Layer Architecture.
+                                    </div>
+                                    <div class="tags text-muted">
+                                        ASP.NET Web Forms, C#, Bootstrap
+                                    </div>
+                                    <div class="project-icons mt-3 d-flex align-items-center gap-2">
+                                        <a target="_blank" href="https://github.com/apurvathakker9/OHFIndiaDashboard"><i class="fa fa-github fa-2x"></i></a>
+                                        <a target="_blank" href="http://ohfindia.com/"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 image-col">
+                                <img src="./assets/images/projects/ohfindia-jobs.png"
+                                    class="img-responsive" />
+                            </div>
+                            <div class="col-md-6 col-sm-12 project-content">
+                                <div class="project-info">
+                                    <h6 class="text-muted">Full Stack Project</h6>
+                                    <h4 class="fw-bold">Jobs OHF India</h4>
+                                    <div class="project-details my-3">
+                                        The requirement was to take custom made MCQ based tests for interviewees so as to evaluate interviewees at some scale and getting real-time update on their performances eventually helping in the screening.
+                                    </div>
+                                    <div class="tags text-muted">
+                                        ASP.NET Web Forms, C#, Bootstrap
+                                    </div>
+                                    <div class="project-icons mt-3 d-flex align-items-center gap-2 justify-content-md-end">
+                                        <a target="_blank" href="https://github.com/apurvathakker9/jobs-ohfindia"><i class="fa fa-github fa-2x"></i></a>
+                                        <a target="_blank" href="http://jobs.ohfindia.com/"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -448,12 +535,14 @@
                     </div>
                 </div>
             </footer>
-            
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                crossorigin="anonymous"></script>
-            <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-            <script src="./assets/vendor/aos/dist/aos.js"></script>
        </div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+        <script src="./assets/vendor/aos/dist/aos.js"></script>
     </body>
 </html>

@@ -17,6 +17,7 @@ body {
 
 .body-wrapper{
 	overflow-x: hidden;
+	height: 100%;
 }
 
 /* Common styles for all the sections except the hero section */
@@ -70,6 +71,39 @@ h5,
 h6 {
 	font-family: "Roboto", sans-serif;
 }
+
+
+/* ************************************* 
+	Back To Top
+ *************************************** */
+
+ .back-to-top{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	right: 36px;
+	bottom: 36px;
+	z-index: 999;
+	background: #106eea;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	transition: all 0.4s;
+	color: white;
+	text-decoration: none;
+ }
+
+ .back-to-top:hover{
+	color: white;
+	text-decoration: none;
+	background: #297eec;
+ }
+
+ .back-to-top.active{
+	visibility: visible;
+	opacity: 1;
+ }
+
 
 /* ************************************* 
 	Navbar
@@ -239,6 +273,41 @@ h6 {
 	width: 72px;
  }
 
+
+ /* ************************************* 
+	Projects
+ *************************************** */
+
+#projects #projects-content>.row {
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+#projects #projects-content .row:nth-child(even) .image-col{
+	order: 2;
+}
+
+#projects #projects-content .row:nth-child(odd) .project-content{
+	text-align: right;
+	margin-left: auto;
+}
+
+#projects .project-details {
+	background-color: var(--info-color);
+	font-size: 14px;
+	border-radius: 9px;
+	padding: 30px 18px;
+	box-shadow: 5px 5px 18px rgb(173, 170, 170);
+}
+
+#projects .project-icons a{
+	color: var(--bs-gray-600);
+	transition: 0.3s all;
+}
+
+#projects .project-icons a:hover{
+	color: var(--bs-gray-700);
+}
 
  /* ************************************* 
 	Footer
