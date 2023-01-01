@@ -1,10 +1,7 @@
 <!-- TODO:
-1. Projects Section
-3. Navbar working and underline on active
 4. Change Photos
 5. Change Content for about me and other headings
 6. Add Social Media Icons to the left.
-7. Animate on scroll.
 -->
 
 <html>
@@ -23,7 +20,7 @@
 
        <div class="body-wrapper">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-light custom-navbar">
+            <nav id="header" class="navbar navbar-expand-lg bg-light custom-navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <!-- <img src="./assets/images/main-profile.png" alt="Logo" width="50" height="50"
@@ -33,15 +30,47 @@
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Experience</a>
-                            </li>
-                        </ul>
+                    <div class="mobile-nav">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto active" href="#hero-section"><span>Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#about-me"><span>About</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#work-experience"><span>Experience</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#skills"><span>Skills</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#projects"><span>Projects</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="desktop-nav">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto active" href="#hero-section"><span>Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#about-me"><span>About</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#work-experience"><span>Experience</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#skills"><span>Skills</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scrollto" href="#projects"><span>Projects</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -49,18 +78,18 @@
             <section id="hero-section" class="mt-5">
                 <div class="container">
                     <div class="profile-images d-flex justify-content-center align-items-center">
-                        <img src="./assets/images/main-profile.png" />
-                        <img class="featured-image" src="./assets/images/main-profile.png" />
-                        <img src="./assets/images/main-profile.png" />
+                        <img data-aos-delay="300" data-aos="fade-right" src="./assets/images/speaking_l.JPG" />
+                        <img data-aos="fade-up" class="featured-image" src="./assets/images/main-profile.png" />
+                        <img data-aos-delay="300" data-aos="fade-left" src="./assets/images/speaking_rc.jpg" />
                     </div>
-                    <div class="content text-center mt-5">
-                        <h5>Hey There! I'm</h5>
-                        <h1 class="name">Apurva Thakker</h1>
-                        <h5 class="mt-3">A Frontend Engineer and a Music Enthusiast who loves to 
-                            <span class="typer fw-bold" id="main" data-words="code, explore, socialize" data-delay="100" data-deleteDelay="1000"></span>
+                    <div class="content text-center mt-5" data-aos-delay="200">
+                        <h5 data-aos-delay="400" data-aos="fade-up">Hey There! I'm</h5>
+                        <h1 class="name" data-aos-delay="500" data-aos="fade-up">Apurva Thakker</h1>
+                        <h5 class="mt-3" data-aos-delay="600" data-aos="fade-up">A Frontend Engineer and a Music Enthusiast who loves to 
+                            <span class="typer fw-bold" id="main" data-words="code, sing, explore, socialize" data-delay="100" data-deleteDelay="1000"></span>
                             <span class="cursor" data-owner="main"></span>
                         </h5>
-                        <div class="social-icons">
+                        <div class="social-icons" data-aos="fade-up" data-aos-delay="700">
                             <!-- <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> -->
@@ -79,11 +108,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h3 class="">About Me</h3>
+                            <h3 class="" data-aos="fade-down">About Me</h3>
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12" data-aos="zoom-in-right">
                             <p>
                                 Hello, My name is Apurva Thakker a software engineer, a problem solver, a dedicated learner, and a
                                 musician deep down. I have been fortunate to meet
@@ -105,10 +134,10 @@
                             </p>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <div class="about-images d-flex px-3 h-100">
+                            <div class="about-images d-flex px-3 h-100" data-aos="zoom-in-left">
                                 <div class="images-wrapper">
                                     <div class="about-pic-background"></div>
-                                    <img src="./assets/images/main-profile.png" alt="Apurva Thakker - About Me"
+                                    <img src="./assets/images/about.JPG" alt="Apurva Thakker - About Me"
                                         class="img-responsive" />
                                 </div>
                             </div>
@@ -122,14 +151,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h3 class="">Where I've Worked</h3>
+                            <h3 class="" data-aos="fade-down">Where I've Worked</h3>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="nav w-100 work-experience-nav flex-column me-3" id="v-pills-tab" role="tablist"
+                                    <div data-aos="fade-right" class="nav w-100 work-experience-nav flex-column me-3" id="v-pills-tab" role="tablist"
                                         aria-orientation="vertical">
                                         <button class="nav-link active d-flex align-items-center" id="v-pills-home-tab"
                                             data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
@@ -147,7 +176,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="tab-content mt-md-0 mt-4" id="v-pills-tabContent">
+                                    <div data-aos="fade-left" class="tab-content mt-md-0 mt-4" id="v-pills-tabContent">
                                         <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel"
                                             aria-labelledby="v-pills-home-tab" tabindex="0">
                                             <div class="work-experience-content">
@@ -168,7 +197,7 @@
                                                                 company, solves the most challenging and complex problem of the
                                                                 logistics industry - Last-Mile Delivery.
                                                             </p>
-                                                            <div class="work-points-wrapper">
+                                                            <div class="work-points-wrapper" data-aos-delay="200" data-aos="fade-left">
                                                                 <div class="work-point">
                                                                     <div class="marking"></div>
                                                                     <div class="work-point-content">
@@ -276,11 +305,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h3 class="">Thing's I know</h3>
+                            <h3 class="" data-aos="fade-down">Thing's I know</h3>
                         </div>
                     </div>
                     <div class="row mt-3" id="languages">
-                        <div class="col">
+                        <div class="col" data-aos="fade-left">
                             <h5 class="fw-bold">- Languages</h5>
                             <div class="row mt-4 align-items-center justify-content-center images-wrapper">
                                 <div class="col-md-2 col-sm-4 col-3 d-flex align-items-center justify-content-center">
@@ -306,7 +335,7 @@
                         </div>
                     </div>
                     <div class="row mt-5" id="frameworks">
-                        <div class="col">
+                        <div class="col" data-aos="fade-right">
                             <h5 class="fw-bold">- Libraries & Frameworks</h5>
                             <div class="row mt-4 align-items-center justify-content-center images-wrapper">
                                 <div class="col-md-2 col-sm-4 col-3 d-flex align-items-center justify-content-center my-3">
@@ -341,7 +370,7 @@
                         </div>
                     </div>
                     <div class="row mt-5" id="tools">
-                        <div class="col">
+                        <div class="col" data-aos="fade-right">
                             <h5 class="fw-bold">- Tools</h5>
                             <div class="row mt-4 align-items-center justify-content-center images-wrapper">
                                 <div class="col-md-2 col-sm-4 col-3 d-flex align-items-center justify-content-center">
@@ -364,17 +393,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h3 class="">Projects I've worked on</h3>
+                            <h3 class="" data-aos="fade-down">Projects I've worked on</h3>
                         </div>
                     </div>
                     <div id="projects-content">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 image-col">
-                                <img src="https://brittanychiang.com/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif"
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-sm-12 image-col" data-aos="fade-right">
+                                <img src="./assets/images/projects/covid-today.png"
                                     class="img-responsive" />
                             </div>
-                            <div class="col-md-6 col-sm-12 project-content">
-                                <div class="project-info">
+                            <div class="col-md-6 col-sm-12 project-content mt-4 mt-md-0">
+                                <div class="project-info" data-aos="fade-left" data-aos-delay="200">
                                     <h6 class="text-muted">Frontend Project</h6>
                                     <h4 class="fw-bold">Covidtoday.in</h4>
                                     <div class="project-details my-3">
@@ -390,13 +419,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 image-col">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-sm-12 image-col" data-aos="fade-left">
                                 <img src="./assets/images/projects/ohfindia.com.png"
                                     class="img-responsive" />
                             </div>
-                            <div class="col-md-6 col-sm-12 project-content">
-                                <div class="project-info">
+                            <div class="col-md-6 col-sm-12 project-content mt-4 mt-md-0">
+                                <div class="project-info" data-aos="fade-right" data-aos-delay="200">
                                     <h6 class="text-muted">Full Stack Project</h6>
                                     <h4 class="fw-bold">OHFIndia.com</h4>
                                     <div class="project-details my-3">
@@ -412,13 +441,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 image-col">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-sm-12 image-col" data-aos="fade-right" >
                                 <img src="./assets/images/projects/ohfindia-jobs.png"
                                     class="img-responsive" />
                             </div>
-                            <div class="col-md-6 col-sm-12 project-content">
-                                <div class="project-info">
+                            <div class="col-md-6 col-sm-12 project-content mt-4 mt-md-0">
+                                <div class="project-info" data-aos="fade-left" data-aos-delay="200">
                                     <h6 class="text-muted">Full Stack Project</h6>
                                     <h4 class="fw-bold">Jobs OHF India</h4>
                                     <div class="project-details my-3">
@@ -446,12 +475,12 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="row p-2">
                                 <div class="col">
-                                    <h3 class="">Achievements</h3>
+                                    <h3 class="" data-aos="fade-down">Achievements</h3>
                                 </div>
                             </div>
                             <div class="row p-2 mt-3">
                                 <div class="col">
-                                    <ul>
+                                    <ul data-aos="fade-up">
                                         <li>
                                             Representative in Student Committee of
                                             placements.
@@ -483,12 +512,12 @@
                         <div class="col-md-6 col-sm-12 mt-md-0 mt-sm-4">
                             <div class="row p-2">
                                 <div class="col">
-                                    <h3 class="">Participation & Volunteering</h3>
+                                    <h3 class="" data-aos="fade-down">Participation & Volunteering</h3>
                                 </div>
                             </div>
                             <div class="row p-2 mt-3">
                                 <div class="col">
-                                    <ul>
+                                    <ul data-aos="fade-up">
                                         <li>
                                             Panelist in “Shaping Young Minds” Program
                                             organized by All India Management Association
@@ -536,7 +565,7 @@
                 </div>
             </footer>
        </div>
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
             <i class="fa fa-arrow-up"></i>
         </a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -544,5 +573,6 @@
             crossorigin="anonymous"></script>
         <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
         <script src="./assets/vendor/aos/dist/aos.js"></script>
+        <script src="./assets/vendor/script.js"></script>
     </body>
 </html>
