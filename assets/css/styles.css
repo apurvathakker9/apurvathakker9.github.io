@@ -120,26 +120,28 @@ h6 {
 	border-radius: 50%;
 }
 
-#header {
-	transition: all ease-in-out 0.4s;
-	height: 75px;
-}
+@media (min-width: 992px) {
+	#header {
+		transition: all ease-in-out 0.4s;
+		height: 75px;
+	}
 
-#header.fixed-top {
-	height: 63px;
+	#header.fixed-top {
+		height: 63px;
+	}
 }
 
 /* Desktop Nav */
-.desktop-nav .navbar-nav .nav-item {
+.navbar-nav .nav-item {
 	padding-left: 6px;
 }
 
-.desktop-nav .navbar-nav .nav-item>a>span {
+.navbar-nav .nav-item>a>span {
 	position: relative;
 	padding: 0 3px;
 }
 
-.desktop-nav .navbar-nav>.nav-item>a>span::before {
+.navbar-nav>.nav-item>a>span::before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -152,22 +154,22 @@ h6 {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.desktop-nav .navbar-nav a:hover>span::before,
-.desktop-nav .navbar-nav .nav-item:hover>a>span::before,
-.desktop-nav .navbar-nav>.nav-item>a.active>span::before {
+.navbar-nav a:hover>span::before,
+.navbar-nav .nav-item:hover>a>span::before,
+.navbar-nav>.nav-item>a.active>span::before {
 	visibility: visible;
 	width: 100%;
 }
 
-.desktop-nav .navbar-nav a:hover,
-.desktop-nav .navbar-nav a.active,
-.desktop-nav .navbar-nav a.active:focus,
-.desktop-nav .navbar-nav .nav-item:hover>a {
+.navbar-nav a:hover,
+.navbar-nav a.active,
+.navbar-nav a.active:focus,
+.navbar-nav .nav-item:hover>a {
 	color: var(--color-blue) !important;
 }
 
 /* Mobile Nav */
-.mobile-nav{
+/* .mobile-nav{
 	display: contents;
 }
 
@@ -182,7 +184,7 @@ h6 {
 	.desktop-nav{
 		display: block;
 	}
-}
+} */
 
 
 /* ************************************* 

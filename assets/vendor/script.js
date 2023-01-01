@@ -110,7 +110,11 @@
             e.preventDefault()
 
             let navbar = select('#header')
-            scrollto(this.hash)
+            scrollto(this.hash);
+
+            if (window.screen.width < 992) {
+
+            }
         }
     }, true)
 
