@@ -41,7 +41,7 @@ section>.container>.row>.col>h3{
 	white-space: nowrap;
 }
 
-section>.container>.row>.col>h3::before{
+/* section>.container>.row>.col>h3::before{
 	position: relative;
 	counter-increment: section 1;
 	content: "0" counter(section) ".";
@@ -49,7 +49,7 @@ section>.container>.row>.col>h3::before{
 	color: var(--color-blue);
 	font-size: 21px;
 	font-weight: 400;
-}
+} */
 
 section>.container>.row>.col>h3::after{
 	content: "";
