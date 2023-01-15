@@ -372,8 +372,12 @@ h6 {
 
 @media (min-width: 700px) {
 
-	#projects .row:nth-child(odd)>.image-col img {
+	#projects .row>.image-col img {
 		min-width: 400px;
+	}
+
+	#projects .row:nth-child(even)>.image-col img{
+		margin-left: -63px;
 	}
 
 	#projects #projects-content .row:nth-child(even) .image-col {
@@ -388,14 +392,17 @@ h6 {
 
 
 @media (min-width: 900px) {
-	#projects .row:nth-child(odd)>.image-col img {
+	#projects .row>.image-col img {
 		min-width: 450px;
+	}
+
+	#projects .row:nth-child(even)>.image-col img{
+		margin-left: -54px;
 	}
 }
 
 #projects #projects-content>.row {
-	margin-top: 45px;
-	margin-bottom: 45px;
+	margin-top: 90px;
 }
 
 #projects .project-details {
